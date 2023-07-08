@@ -176,7 +176,7 @@ def main() -> int:
         # get count ips
         try:
             c_ip = 0
-            with open('ip.txt') as fp:
+            with open(f'{args.hostname}') as fp:
                 for line in fp:
                     if line.strip():
                         c_ip += 1
