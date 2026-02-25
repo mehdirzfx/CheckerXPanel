@@ -41,15 +41,15 @@ pip install -r requirements.txt
 
 ## 🚀 Installation
 ```bash
-git clone https://github.com/yourusername/xpanel-security-tester.git
-cd xpanel-security-tester
+git clone https://github.com/mehdirzfx/CheckerXPanel.git
+cd CheckerXPanel
 pip install -r requirements.txt
 ```
 ## 💻 Usage
 
 ### Basic Syntax
 ```bash
-python xpanel_tester.py -h <hostname_file> -t <threads> --timeout <seconds>
+python main.py -h <hostname_file> -t <threads> --timeout <seconds>
 ```
 ### Command Line Arguments
 
@@ -66,19 +66,19 @@ python xpanel_tester.py -h <hostname_file> -t <threads> --timeout <seconds>
 
 # Basic scan with default settings
 ```bash
-python xpanel_tester.py -h targets.txt
+python main.py -h targets.txt
 ```
 # Aggressive scan with 20 threads
 ```bash
-python xpanel_tester.py -h targets.txt -t 20 --timeout 3
+python main.py -h targets.txt -t 20 --timeout 3
 ```
 # Stop on first success
 ```bash
-python xpanel_tester.py -h targets.txt -b
+python main.py -h targets.txt -b
 ```
 # Custom timeout
 ```bash
-python xpanel_tester.py -h targets.txt --timeout 10
+python main.py -h targets.txt --timeout 10
 ```
 ### Input File Format
 Create a text file with one hostname/IP per line:
